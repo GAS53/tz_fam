@@ -126,3 +126,4 @@ AUTH_USER_MODEL = "mainapp.CustomUser"
 MEDIA_ROOT = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 STATIC_URL = 'static/'
+WATERMARK = 'NOT COPY!!!! NOT COPY!!!! NOT COPY!!!! NOT COPY!!!! NOT COPY!!!!'
