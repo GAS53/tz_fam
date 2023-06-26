@@ -8,12 +8,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         MAN = 'M', 'Man'
         WOMAN = 'W', 'Woman'
 
-
     username = models.CharField(verbose_name='имя', max_length=50)
     surname = models.CharField(verbose_name='фамилия', max_length=50)
     email = models.EmailField(verbose_name='почта', unique=True)
     gender = models.CharField(max_length=1, choices=Gender.choices, default=Gender.MAN)
-    avatar = models.FilePathField(verbose_name='аватарка')
+    avatar = models.FilePathField(verbose_name='аватарка', path='media/avatars/')
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']

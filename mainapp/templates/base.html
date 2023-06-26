@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <title>test project </title>
+</head>
+
+<body>
+
+<div class="container-md site-container">
+
+    {% block title %}
+    <h1> Заголовок сайта знакомств </h1>
+
+    {% endblock %}
+
+    {% block content %}
+    Основной блок базовой страници на подмену
+    {% endblock content %}
+
+    {% block footer %}
+    
+    {% endblock %}
+</div>
+
+
+
+
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
